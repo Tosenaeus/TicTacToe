@@ -22,7 +22,7 @@ namespace TicTacToe
 
                 Console.Write("Game finished. Enter 'Q' to quit, or press any other key to restart: ");
                 controlInput = Console.ReadLine();
-                if (controlInput == "Q" || controlInput == "q")
+                if (controlInput.Equals("Q", StringComparison.OrdinalIgnoreCase))
                 {
                     run = false;
                 } else
